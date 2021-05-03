@@ -1,0 +1,538 @@
+.farm .earn-top--item-first:after {
+    background: url(../images/decor-2.png) no-repeat
+}
+
+.earn-second-selects-farm {
+    align-items: center
+}
+
+.earn-second-selects-farm .earn-second-selects--button {
+    margin-top: 40px
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-double {
+    display: flex;
+    align-items: center
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-double-item {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-double-item:first-child {
+    position: relative;
+    padding-right: 20px;
+    margin-right: 20px
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-double-item:first-child:after {
+    content: "";
+    height: 45px;
+    background: #606060;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg)
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-double-item-checkbox {
+    text-transform: uppercase;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 6px;
+    color: #606060;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-weight: 700;
+    position: absolute;
+    left: 62px;
+    bottom: -30px
+}
+
+.earn-second-selects-farm .earn-second-selects-input {
+    min-width: 95px
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-text {
+    font-family: Titillium Web;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #000;
+    padding-top: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: -30px;
+    left: 95px
+}
+
+.earn-second-selects-farm .earn-second-selects--item-view-text i {
+    font-style: normal;
+    font-weight: 700
+}
+
+.earn-second-selects-farm .earn-second-selects--item:first-child:after {
+    bottom: 0
+}
+
+.box-total__title {
+    color: #606060;
+    font-family: Oswald;
+    font-size: 90px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -2.55px;
+    text-transform: uppercase;
+    margin: 0 -70px
+}
+
+.box-total-holder {
+    padding: 0 70px
+}
+
+.box-total__dollar {
+    color: #33a4d8;
+    font-family: Oswald;
+    font-size: 95px;
+    font-style: normal;
+    letter-spacing: -2.38px;
+    font-weight: 300
+}
+
+.box-total__dollar strong {
+    margin: 0 8px;
+    display: inline-block
+}
+
+.box-total__txt {
+    color: #606060;
+    font-family: Oswald;
+    font-size: 29px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .15px;
+    margin-bottom: 35px
+}
+
+.box-total__txt .cost {
+    margin-left: 5px;
+    font-size: 31px
+}
+
+.box-total .label {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #606060;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px
+}
+
+.box-total .label input[type=text] {
+    margin: 0
+}
+
+.box-total .label label {
+    margin-left: 5px
+}
+
+.box-total .info-btn {
+    position: relative
+}
+
+.tol-pay {
+    background: #fff;
+    margin: 20px -100px 20px 0;
+    padding: 13px 100px 20px 23px
+}
+
+.tol-label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px
+}
+
+.tol-label label {
+    text-transform: uppercase;
+    color: #606060;
+    font-family: Titillium Web;
+    font-size: 19px;
+    font-weight: 100
+}
+
+.tol-label .info-btn {
+    cursor: pointer;
+    position: relative;
+    display: flex
+}
+
+.tol-label .info-btn:hover path {
+    fill: #33a4d8
+}
+
+.tol-label .info-btn:hover .tooltip {
+    visibility: visible
+}
+
+.tol-label .info-btn .tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #efefef;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 223%;
+    left: 100%;
+    margin-left: 0;
+    border: 2px solid #33a4d8;
+    border-radius: 5px 5px 5px 0;
+    min-height: 95px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.tol-label .info-btn .tooltip p {
+    color: #0c1c2b;
+    font-family: Titillium Web;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0
+}
+
+.tol-label .info-btn .tooltip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -16px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-color: #33a4d8 transparent transparent;
+    border-style: solid;
+    border-width: 25px 15px 8px 17px;
+    -webkit-transform: skew(-40deg);
+    transform: skew(-40deg)
+}
+
+.tol-label .info-btn .tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: 97%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 32px solid transparent;
+    border-top: 26px solid #efefef;
+    -webkit-transform: skew(-9deg);
+    transform: skew(-9deg)
+}
+
+.btn-total {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: Titillium Web;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    min-height: 65px;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .3)
+}
+
+.btn-total_pink {
+    color: #fff;
+    background: linear-gradient(180deg, #ff7fff 44%, #f0f 71%, #f0f 98%)
+}
+
+.btn-total_pink:hover {
+    opacity: .8
+}
+
+.btn-total_transparent {
+    color: #f0f;
+    border: 1px solid #f0f
+}
+
+.btn-total_transparent:hover {
+    background: #f0f;
+    color: #fff
+}
+
+.form-box {
+    position: relative;
+    display: flex;
+    margin: 0 0 22px
+}
+
+.form-box__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #f3f3f3;
+    padding: 0 20px;
+    font-style: italic;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #33a4d8;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: background .3s ease;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center
+}
+
+.form-box__input {
+    border: 1px solid #33a4d8;
+    max-width: 375px;
+    width: 100%;
+    height: 60px;
+    padding: 5px 100px 5px 5px;
+    color: #606060;
+    font-family: Titillium Web;
+    font-size: 27px;
+    font-weight: 200;
+    background: transparent;
+    border-radius: 4px;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none
+}
+
+.numb {
+    color: #606060;
+    font-family: Oswald;
+    font-size: 43px;
+    line-height: 45px;
+    letter-spacing: -1.08px;
+    font-weight: 100
+}
+
+.numb.hide {
+    display: none
+}
+
+@media (max-width:1600px) {
+    .farm .earn-top--item-first:after {
+        background-size: contain
+    }
+
+    .earn-second-selects-farm .earn-second-selects--button {
+        margin-top: 50px
+    }
+
+    .earn-second-selects-farm .earn-second-selects--item-view-double-item {
+        flex-basis: 50%
+    }
+
+    .earn-second-selects-farm .earn-second-selects--item-view-double-item-checkbox {
+        padding-right: 0
+    }
+
+    .earn-second-selects-farm .earn-second-selects--item-view-text {
+        left: 70px;
+        bottom: -15px;
+        font-size: 16px
+    }
+
+    .earn-second-selects-farm .earn-second-selects--item:first-child:after {
+        bottom: -150px
+    }
+}
+
+@media (max-width:480px) {
+    .earn-second-selects-farm .earn-second-selects--item-view-double-item:first-child {
+        padding-right: 10px;
+        margin-right: 10px
+    }
+
+    .earn-second-selects-farm .earn-second-selects-input {
+        min-width: 55px
+    }
+
+    .earn-second-selects-farm .earn-second-selects--item-view-text {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        padding: 10px 0 0
+    }
+}
+
+@media (max-width:767px) {
+    .earn-second-selects-farm .earn-second-selects--item-view-double-item-checkbox {
+        left: 42px
+    }
+}
+
+@media (max-width:400px) {
+    .earn-second-selects-farm .earn-second-selects--item-view-double-item-checkbox {
+        left: 32px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .earn-second-selects-farm .earn-second-selects--item-view-text {
+        left: 50px
+    }
+
+    .box-total-holder {
+        padding: 0
+    }
+
+    .tol-pay {
+        margin-right: 0;
+        padding-right: 20px;
+        padding-top: 20px
+    }
+
+    .box-total__title {
+        font-size: 45px;
+        line-height: 47px
+    }
+
+    .box-total__dollar {
+        font-size: 40px;
+        line-height: 43px
+    }
+
+    .box-total__txt {
+        margin-bottom: 15px
+    }
+
+    .box-total__txt,
+    .box-total__txt .cost {
+        font-size: 24px;
+        line-height: 26px
+    }
+
+    .form-box__input {
+        height: 40px;
+        padding: 5px 75px 5px 5px;
+        font-size: 22px;
+        line-height: 24px
+    }
+
+    .form-box__btn {
+        font-size: 30px;
+        line-height: 32px
+    }
+
+    .tol-label label {
+        font-size: 16px
+    }
+
+    .btn-total {
+        font-size: 21px;
+        line-height: 24px
+    }
+
+    .numb {
+        font-size: 34px;
+        line-height: 37px
+    }
+}
+
+@media screen and (max-width:400px) {
+    .earn-second-selects-farm .earn-second-selects--item-view-text {
+        left: 40px
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .box-total__title {
+        font-size: 69px;
+        line-height: 71px;
+        margin: 0 0 10px
+    }
+
+    .box-total__dollar {
+        font-size: 70px;
+        line-height: 73px;
+        margin: 0 0 10px
+    }
+
+    .form-box__btn {
+        font-size: 45px
+    }
+
+    .btn-total {
+        font-size: 29px;
+        line-height: 31px;
+        height: auto;
+        padding: 7px 10px
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .box-total__dollar,
+    .box-total__title {
+        font-size: 30px;
+        line-height: 33px
+    }
+
+    .box-total__txt {
+        font-size: 18px;
+        line-height: 21px
+    }
+
+    .form-box__input {
+        font-size: 14px;
+        line-height: 16px
+    }
+
+    .form-box__btn {
+        font-size: 20px;
+        line-height: 22px
+    }
+
+    .numb {
+        font-size: 27px;
+        line-height: 30px
+    }
+
+    .btn-total {
+        font-size: 18px;
+        line-height: 21px
+    }
+}

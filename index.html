@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Xion Finance - One Click to DeFi</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="stylesheet" href="styles/home.min.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5ST216GTY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D5ST216GTY');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TTBWC58');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTBWC58" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+        <div class="header">
+
+            <div class="flex_container">
+                <a class="header-logo" href=".">
+                    <img src="images/logo.svg" alt="">
+                </a>
+
+                <button class="header-menu">Menu</button>
+
+                <ul class="header-list">
+                    <li class="header-list--item">
+                        <a href="earn.html">EARN</a>
+                    </li>
+                    <li class="header-list--item">
+                        <a href="farm.html">FARM</a>
+                    </li>
+                    <li class="header-list--item">
+                        <a href="shop.html">SHOP</a>
+                    </li>
+                    <li class="header-list--item">
+                        <a href="withdraw.html">WITHDRAW</a>
+                    </li>
+                </ul>
+
+                <a id="connect-wallet" href="#" class="header-btn">GET STARTED</a>
+
+            </div>
+
+        </div>
+
+        <div class="preloader">
+            <div class="preloader_img">
+                <img src="images/preloader_img.svg" alt="">
+                <div class="preloader_o"></div>
+            </div>
+        </div>
+
+
+
+        <div class="general-page">
+            <div class="general-page--images">
+                <img class="general-page--image general-page--image-left" src="images/general-left.png" alt="">
+                <img class="general-page--image general-page--image-right" src="images/general-right.png" alt="">
+            </div>
+            <!-- <div class="flex_container tvl-entry-in">
+                <div class="total">
+                    <span>Total Value Locked</span>
+                    <i id="tvl">Loading...</i>
+                </div>
+                <a class="toplink" href="farm.html">
+                    <div class="general-page-btn">Get Started</div>
+                </a>
+            </div> -->
+        </div>
+        <div class="flex_container audit-logo">
+            <a href="https://www.certik.org/projects/xion" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248.66 42.48">
+                    <defs>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <g id="Layer_16" data-name="Layer 16"><text class="cls-1"
+                                    transform="translate(0 25.42)">Audited
+                                    by:
+                                </text>
+                                <path
+                                    d="M109.16,11.15c-.43,13.72-6,23.87-17.73,30.44-2.13,1.2-1.4,1.19-3.56,0-8.91-5-14.62-12.34-16.82-22.33a32.6,32.6,0,0,1-.34-12.94,1.18,1.18,0,0,1,.74-.82,1.21,1.21,0,0,1,.94.6c2.42,4.64,4.79,9.3,7.16,14a1,1,0,0,0,1.06.67q9.3,0,18.61,0a.94.94,0,0,0,1-.65q3.33-7,6.68-13.94c.21-.44.49-.78,1-.69s.7.46.75,1C108.82,8.14,109,9.88,109.16,11.15ZM80.79,22.46l8.89,17.32c3.13-5.86,6.18-11.56,9.27-17.32ZM87.5,39.24q-7.66-15-15.34-29.91a31.81,31.81,0,0,0,3.21,17.21A29.67,29.67,0,0,0,87.5,39.24ZM107.31,9.67,92,39.23C101.16,35.24,108.76,20.5,107.31,9.67Z" />
+                                <path
+                                    d="M186.1,29.07c-.8,0-1.39,0-2,0a1.28,1.28,0,0,1-.71-.42c-1.41-1.65-2.79-3.33-4.22-5a1.47,1.47,0,0,0-1-.45c-2-.05-3.95,0-6,0V29h-1.72V13.37c.29,0,.55,0,.82,0H183c2.25,0,3.18.95,3.18,3.21,0,1.24,0,2.47,0,3.7a2.65,2.65,0,0,1-2.92,3h-2.13C182.83,25.18,184.4,27,186.1,29.07Zm-7.78-7.66c1.68,0,3.36,0,5,0,.74,0,1-.29,1-1,0-1.41,0-2.81,0-4.22,0-.78-.31-1.07-1.09-1.07h-10c-.87,0-1.14.29-1.15,1.18q0,2,0,4c0,.87.3,1.14,1.18,1.14C175,21.42,176.67,21.41,178.32,21.41Z" />
+                                <path
+                                    d="M145.91,13.3h13.24c1.09,0,1.09,0,1.07,1.07,0,.19,0,.38,0,.68H147.65v5.22h10.06v1.8H147.66v5.22h12.39c.09.12.14.15.14.19.16,1.59.16,1.59-1.41,1.59H145.91Z" />
+                                <path
+                                    d="M135.58,27.31V29c-.22,0-.46,0-.69,0q-6,0-12,0a2.63,2.63,0,0,1-3-3c0-3.28,0-6.57,0-9.85a2.62,2.62,0,0,1,2.92-2.93h12.09l.64,0v1.72h-12.5c-1.18,0-1.39.21-1.39,1.37V26c0,1.1.23,1.33,1.36,1.33,3.88,0,7.76,0,11.64,0Z" />
+                                <path
+                                    d="M235.44,22.08v5.56c0,1.61,0,1.61-1.72,1.34V13.42c.06,0,.1-.09.14-.09,1.58-.13,1.58-.13,1.58,1.43V20.3a14.91,14.91,0,0,1,2.22,0,4.38,4.38,0,0,0,4.75-2.2c1-1.45,2.25-2.69,3.34-4.06a1.6,1.6,0,0,1,1.62-.75,10.92,10.92,0,0,0,1.29,0l-6.59,7.89L248.62,29c-1.28.13-2.29.22-3.15-1-1.4-1.91-3-3.66-4.56-5.45a1.48,1.48,0,0,0-1-.48C238.48,22.05,237,22.08,235.44,22.08Z" />
+                                <path
+                                    d="M211.34,15.05h-6.92V29h-1.77V15.08h-7V13.3h14.66c1.08,0,1.08,0,1.06,1.08C211.39,14.57,211.36,14.77,211.34,15.05Z" />
+                                <path
+                                    d="M89.67,1.67l-.79.22L77.56,5.35c-.23.07-.51.23-.7.16s-.73-.31-.81-.57.15-.66.32-.94c.09-.13.35-.16.54-.22C80.94,2.55,85,1.31,89,.1a2.11,2.11,0,0,1,1.14,0c4.21,1.26,8.4,2.55,12.6,3.83.19.06.45.09.53.23a1.41,1.41,0,0,1,.29.89c-.07.25-.45.47-.73.58s-.48-.07-.71-.14L90.45,1.89Z" />
+                                <path d="M221,13.35h1.65V29H221Z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="flex_container tvl-entry">
+            <div class="total">
+                <span>Total Value Locked</span>
+                <i id="tvl" class="pulsing">Loading...</i>
+            </div>
+            <a class="toplink" href="farm.html">
+                <div class="general-page-btn">START FARMING</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="connect-success" class="popup__overlay popup-earn-js">
+        <div class="popup">
+            <a id="close-earn" href="#" class="popup__close"></a>
+            <div class="box-success">
+                <div class="box-success__title">YOU ARE CONNECTED</div>
+                <div class="box-success__image">
+                    <img src="images/img_6.png" alt="Image description" width="" height="">
+                </div>
+                <div class="block-btn">
+                    <div class="box-total__txt">You are ready to farm, earn and swap now!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/loading-bar.min.js"></script>
+    <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script async type="text/javascript" src="js/js.cookie.js"></script>
+    <script type="text/javascript" src="js/web3.js"></script>
+    <script async type="text/javascript" src="js/big.min.js"></script>
+    <script async type="text/javascript" src="js/web3modal.js"></script>
+    <script async type="text/javascript" src="js/evm-chains.js"></script>
+    <script async type="text/javascript" src="js/web3-provider.js">
+    </script>
+    <script async type="text/javascript" src="js/torus.umd.min.js"></script>
+    <script async type="text/javascript" src="js/authereum.js">
+    </script>
+    <!-- <script async src="js/ramp-instant-sdk.umd.js"></script> -->
+    <script async type="text/javascript" src="js/connect-wallet.js"></script>
+    <script src="https://browser.sentry-cdn.com/6.1.0/bundle.tracing.min.js"
+        integrity="sha384-zKY6TGhvvk56kzNuSSpDCYYF5IU+xaSN4YmCDBCq/l98ITbn+9I+2/LZ2clNwe80" crossorigin="anonymous">
+    </script>
+    <script src="//app.helphero.co/embed/r2KMdzcgHWn"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2782184455149090');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2782184455149090&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function () {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript";
+            mf.defer = true;
+            mf.src = "//cdn.mouseflow.com/projects/2f3885b0-c592-42bb-8e10-87110ffb3b19.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+</body>
+
+</html>
